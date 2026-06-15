@@ -1,0 +1,39 @@
+# ---- OS / IDE ----
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+
+# ---- Flutter / Dart (mobile/) ----
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/.pub-cache/
+mobile/.pub/
+mobile/build/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/**/*.g.dart
+mobile/**/*.freezed.dart
+
+# ---- Java / Spring Boot (backend/) ----
+backend/target/
+backend/build/
+backend/.gradle/
+backend/HELP.md
+*.class
+*.jar
+*.war
+
+# ---- Env / Secrets ----
+.env
+*.local
+
+# ---- Claude ----
+CLAUDE.md
