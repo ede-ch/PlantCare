@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: plantcare_db
+    environment:
+      POSTGRES_DB: plantcare
+      POSTGRES_USER: plantcare
+      POSTGRES_PASSWORD: plantcare
+    ports:
+      - "5432:5432"
+    volumes:
+      - plantcare_data:/var/lib/postgresql/data
+
+volumes:
+  plantcare_data:
