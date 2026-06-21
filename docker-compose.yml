@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: plantcare
       POSTGRES_PASSWORD: plantcare
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - plantcare_data:/var/lib/postgresql/data
 
