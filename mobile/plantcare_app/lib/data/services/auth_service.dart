@@ -1,9 +1,11 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 
 class AuthService {
   final Dio _dio;
 
-  static const String _baseUrl = 'http://10.0.2.2:8080/api/v1';
+  static String get _baseUrl =>
+      kIsWeb ? 'http://localhost:8080/api/v1' : 'http://10.0.2.2:8080/api/v1';
 
   AuthService() : _dio = Dio(BaseOptions(baseUrl: _baseUrl));
 
